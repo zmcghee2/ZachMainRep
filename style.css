@@ -1,60 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap'); 
 body{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: "Open Sans", "Sans-Serif";
+    font-family: "Special Gothic Expanded One", "sans-serif"; 
+    font-weight: 400; 
+    font-style: normal;
+}
+.header{
+    height: 100vh;
+    background-color: orange;
 }
 .navbar{
-    height: 80px;
-    background: black;
-}
-.navbar-container{
-    height: 80px;
     display: flex;
+    justify-content: end;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 30px 0px 50px;
 }
-.navbar-logo a{
-    font-size: 2em;
-    text-decoration: none;
-    color: white;
-}
-.contents-container ul{
-    font-size: 1.1em;
+.navbar ul{
     display: flex;
-    gap: 30px;
-}
-.contents a{
-    text-decoration: none;
     list-style: none;
-    color: white;
+    gap: 20px;
+    padding: 25px 30px;   
+    margin: 0;
 }
-@media screen and (max-width: 960){
-    .contents-container ul{
-        display: none;
-    }
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
 }
-.main{
-    height: 250px;
-    box-shadow: 0px 3px 3px gray inset;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #92a0a1;
+.navbar ul li{
+    border: 1px solid black;
+    padding: 7px 7px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
 }
-.main-slogan-container{
-    
-    height: 100px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 4px 3px rgb(95, 94, 94) inset;
-    padding: 0px 5px 0px 5px;
+.navbar ul li:hover{
+    transform: scale(1.1);
 }
-.main-slogan{
-    display: flex;
-    font-size: 2.2rem;
-}
+.
