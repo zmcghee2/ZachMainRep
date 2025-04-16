@@ -37,6 +37,7 @@ body{
 .nav-list li a:hover{
     background-color: brown;
     transform: scale(1.1);
+    
 }
 #website-logo a{
     text-decoration: none;
