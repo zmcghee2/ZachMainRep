@@ -9,31 +9,38 @@ body{
 }
 .header{
     height: 100vh;
-    background-color: orange;
+    background-image: url(/89781.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .navbar{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
+    padding: 15px 25px;
+
 }
-.navbar ul{
-    display: flex;
+.nav-list{
     list-style: none;
-    gap: 20px;
-    padding: 25px 30px;   
-    margin: 0;
+    display: flex;
+    gap: 30px;
 }
-.navbar ul li a{
+.nav-list li a{
     text-decoration: none;
-    color: black;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 10px;
+    background-color: rgba(42, 41, 41, 0.781);
+    transition: all 0.5s ease;
 }
-.navbar ul li{
-    border: 1px solid black;
-    padding: 7px 7px;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-}
-.navbar ul li:hover{
+.nav-list li a:hover{
+    background-color: brown;
     transform: scale(1.1);
 }
-.
+#website-logo a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 200px;
+    color: white;
+}
