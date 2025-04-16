@@ -33,12 +33,12 @@ body{
     border-radius: 10px;
     background-color: rgba(42, 41, 41, 0.781);
 }
-.nav-list li a{
-    transition: transform 0.5s ease;
-}
 .nav-list li:hover{
     transition: transform 0.3s ease;
     transform: scale(1.1);
+}
+.nav-list li a:hover{
+    box-shadow: 0px 0px 6px white;
 }
 #website-logo a{
     text-decoration: none;
@@ -46,7 +46,38 @@ body{
     font-weight: 200px;
     color: white;
 }
-#website-logo:hover{
-    transition: transform 0.3s ease;
-    transform: scale(1.1);
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 250px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 999;
+}
+.side-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 250px;
+}
+#website-logo-sidebar,
+.side-list li{
+    width: 100%;
+}
+#website-logo-sidebar a,
+.side-list li a{
+    padding: 0px 100% 0px 0px;
+    border: 1px solid rgb(132, 132, 132);
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-decoration: none;
 }
